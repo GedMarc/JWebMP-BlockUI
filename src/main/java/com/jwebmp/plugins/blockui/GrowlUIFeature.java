@@ -1,6 +1,7 @@
 package com.jwebmp.plugins.blockui;
 
 import com.jwebmp.core.Feature;
+import com.jwebmp.core.base.html.interfaces.GlobalFeatures;
 import com.jwebmp.core.htmlbuilder.css.colours.ColourCSSImpl;
 import com.jwebmp.core.htmlbuilder.css.measurement.MeasurementCSSImpl;
 import com.jwebmp.plugins.blockui.options.BlockUIOptions;
@@ -14,7 +15,7 @@ import static com.jwebmp.core.htmlbuilder.css.measurement.MeasurementTypes.*;
  */
 @SuppressWarnings("MissingClassJavaDoc")
 public class GrowlUIFeature<J extends GrowlUIFeature<J>>
-		extends Feature<BlockUIOptions, J>
+		extends Feature<GlobalFeatures, BlockUIOptions, J>
 {
 	/**
 	 * A block ui with the following settings
