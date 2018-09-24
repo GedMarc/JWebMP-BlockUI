@@ -145,8 +145,12 @@ public class BlockUIOptions<J extends BlockUIOptions<J>>
 			message.setTiny(true);
 			message.preConfigure();
 			message.addStyle("display:none");
+			this.message = message.toString(0);
 		}
-		this.message = message.toString(0);
+		else
+		{
+			this.message = null;
+		}
 		return (J) this;
 	}
 
