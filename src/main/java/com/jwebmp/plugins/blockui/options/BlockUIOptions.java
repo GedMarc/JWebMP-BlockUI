@@ -265,7 +265,7 @@ public class BlockUIOptions<J extends BlockUIOptions<J>>
 	 * <p>
 	 * styles for the message when blocking; if you wish to disable
 	 *
-	 * @return the css (type BlockUICSSOptions<?>) of this BlockUIOptions object.
+	 * @return the css (type BlockUICSSOptions ?) of this BlockUIOptions object.
 	 */
 	@NotNull
 	public BlockUICSSOptions<?> getCss()
@@ -300,7 +300,7 @@ public class BlockUIOptions<J extends BlockUIOptions<J>>
 	 * <p>
 	 * styles applied when using $.growlUI
 	 *
-	 * @return the growlCSS (type BlockUIGrowlCSS<?>) of this BlockUIOptions object.
+	 * @return the growlCSS (type BlockUIGrowlCSS ?) of this BlockUIOptions object.
 	 */
 	@NotNull
 	public BlockUIGrowlCSS<?> getGrowlCSS()
