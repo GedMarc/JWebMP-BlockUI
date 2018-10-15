@@ -7,7 +7,7 @@ import com.jwebmp.core.services.IPageConfigurator;
 import javax.validation.constraints.NotNull;
 
 public class BlockUIPageConfigurator
-		implements IPageConfigurator
+		implements IPageConfigurator<BlockUIPageConfigurator>
 {
 	private static final JavascriptReference reference = new JavascriptReference("BlockUIReference", 2.70, "bower_components/blockui/jquery.blockUI.min.js");
 	/**
