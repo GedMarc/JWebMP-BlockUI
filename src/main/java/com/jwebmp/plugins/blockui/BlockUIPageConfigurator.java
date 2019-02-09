@@ -43,7 +43,7 @@ public class BlockUIPageConfigurator
 	@Override
 	public @NotNull Page<?> configure(Page<?> page)
 	{
-		if (!page.isConfigured())
+		if (!page.isConfigured() && enabled())
 		{
 			page.addJavaScriptReference(BlockUIPageConfigurator.reference);
 		}

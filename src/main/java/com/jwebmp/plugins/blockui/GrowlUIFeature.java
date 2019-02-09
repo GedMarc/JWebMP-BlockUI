@@ -35,8 +35,7 @@ public class GrowlUIFeature<J extends GrowlUIFeature<J>>
 	 */
 	public GrowlUIFeature()
 	{
-		super("BlockUIPageFeature");
-		setOptions(new BlockUIOptions());
+		super("GrowlUIFeature");
 		getOptions().setFadeIn(700)
 		            .setFadeOut(700)
 		            .setTimeout(2000)
@@ -49,6 +48,17 @@ public class GrowlUIFeature<J extends GrowlUIFeature<J>>
 		            .setPadding(5)
 		            .setBackgroundColor(new ColourCSSImpl("#000"))
 		            .setColor(new ColourCSSImpl("#000"));
+	}
+
+	@Override
+	public BlockUIOptions<?> getOptions()
+	{
+		BlockUIOptions<?> options = super.getOptions();
+		if (options == null)
+		{
+			return new BlockUIOptions<>();
+		}
+		return options;
 	}
 
 	/**
