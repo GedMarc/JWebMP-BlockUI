@@ -7,7 +7,7 @@ import com.jwebmp.core.htmlbuilder.css.measurement.MeasurementCSSImpl;
 import com.jwebmp.core.htmlbuilder.css.padding.PaddingImpl;
 import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 
 /**
  * The CSS Options for the Growler

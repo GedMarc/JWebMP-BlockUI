@@ -3,7 +3,7 @@ package com.jwebmp.plugins.blockui.options;
 import com.jwebmp.core.htmlbuilder.css.measurement.MeasurementCSSImpl;
 import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 
 /**
  * Defaults for when jquery ui themes are enabled

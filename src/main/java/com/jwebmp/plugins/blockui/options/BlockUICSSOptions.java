@@ -7,7 +7,7 @@ import com.jwebmp.core.htmlbuilder.css.measurement.MeasurementCSSImpl;
 import com.jwebmp.core.htmlbuilder.css.text.TextAlignments;
 import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 
 /**
  * The default CSS Options for the blocker

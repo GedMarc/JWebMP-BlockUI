@@ -4,7 +4,7 @@ import com.jwebmp.core.htmlbuilder.css.colours.ColourCSSImpl;
 import com.jwebmp.core.htmlbuilder.css.displays.Cursors;
 import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 
 /**
  * The Overlay CSS Options
