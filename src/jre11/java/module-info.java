@@ -3,7 +3,7 @@ module com.jwebmp.plugins.blockui {
 	exports com.jwebmp.plugins.blockui.options;
 
 	requires com.jwebmp.core;
-	requires java.validation;
+	requires jakarta.validation;
 	requires com.guicedee.guicedinjection;
 
 	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.blockui.BlockUIPageConfigurator;
