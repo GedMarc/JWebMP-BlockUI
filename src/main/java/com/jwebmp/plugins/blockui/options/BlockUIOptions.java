@@ -1,6 +1,7 @@
 package com.jwebmp.plugins.blockui.options;
 
 import com.jwebmp.core.base.ComponentHierarchyBase;
+import com.jwebmp.core.base.interfaces.IComponentHierarchyBase;
 import com.jwebmp.core.htmlbuilder.css.displays.Cursors;
 import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
@@ -138,13 +139,13 @@ public class BlockUIOptions<J extends BlockUIOptions<J>>
 	 */
 	@SuppressWarnings("unchecked")
 	@NotNull
-	public J setMessage(ComponentHierarchyBase message)
+	public J setMessage(IComponentHierarchyBase<?,?> message)
 	{
 		if (message != null)
 		{
 			message.setTiny(true);
 			message.preConfigure();
-			message.addStyle("display:none");
+			message.asAttributeBase().addStyle("display:none");
 			this.message = message.toString(0);
 		}
 		else

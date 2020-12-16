@@ -15,7 +15,7 @@ import static com.jwebmp.core.htmlbuilder.css.measurement.MeasurementTypes.*;
  */
 @SuppressWarnings("MissingClassJavaDoc")
 public class GrowlUIFeature<J extends GrowlUIFeature<J>>
-		extends Feature<GlobalFeatures, BlockUIOptions, J>
+		extends Feature<GlobalFeatures, BlockUIOptions<?>, J>
 {
 	/**
 	 * A block ui with the following settings

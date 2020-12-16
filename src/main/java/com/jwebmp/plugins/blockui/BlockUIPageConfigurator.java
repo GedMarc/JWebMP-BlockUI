@@ -3,10 +3,32 @@ package com.jwebmp.plugins.blockui;
 import com.jwebmp.core.Page;
 import com.jwebmp.core.base.references.JavascriptReference;
 import com.jwebmp.core.base.servlets.enumarations.RequirementsPriority;
+import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.plugins.PluginStatus;
 import com.jwebmp.core.services.IPageConfigurator;
 
 import jakarta.validation.constraints.NotNull;
 
+@PluginInformation(pluginName = "JQuery BlockUI",
+		pluginUniqueName = "jquery-block-ui",
+		pluginDescription = "Allows to block ui entry with overlays and options",
+		pluginVersion = "1.12.1",
+		pluginDependancyUniqueIDs = "jquery",
+		pluginCategories = "jquery, ui, blockui,block-ui",
+		pluginSubtitle = "Blocks user interactions with overlay displays",
+		pluginGitUrl = "https://github.com/GedMarc/JWebMP-BlockUI",
+		pluginSourceUrl = "https://github.com/malsup/blockui",
+		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-BlockUI/wiki",
+		pluginOriginalHomepage = "https://github.com/malsup/blockui",
+		pluginDownloadUrl = "https://mvnrepository.com/artifact/com.jwebmp.plugins.jquery/jwebmp-block-ui",
+		pluginIconUrl = "",
+		pluginIconImageUrl = "",
+		pluginLastUpdatedDate = "2020/12/14",
+		pluginArtifactId = "jwebmp-jquery-ui",
+		pluginGroupId = "com.jwebmp.plugins.jquery",
+		pluginModuleName = "jwebmp-block-ui",
+		pluginStatus = PluginStatus.Released
+)
 public class BlockUIPageConfigurator
 		implements IPageConfigurator<BlockUIPageConfigurator>
 {

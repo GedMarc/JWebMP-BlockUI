@@ -5,7 +5,7 @@ import com.jwebmp.core.base.html.interfaces.GlobalFeatures;
 import com.jwebmp.plugins.blockui.options.BlockUIOptions;
 
 public class BlockPageUIFeature<J extends BlockPageUIFeature<J>>
-		extends Feature<GlobalFeatures, BlockUIOptions, J>
+		extends Feature<GlobalFeatures, BlockUIOptions<?>, J>
 {
 	public BlockPageUIFeature()
 	{
